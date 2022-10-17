@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="/js/users.js"></script>
+    <link rel="icon" href="/img/logo1.jpg">
+    <link rel="stylesheet" href="/css/gct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Users</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <img src="/img/logo3.jpg">
+        <img src="img/gct1.jpg">
+    </div>
+    <button id="lo">LOGOUT</button>
+
+    {{!-- search --}}
+    {{!-- <div class="topnav"> --}}
+        <div class="topnav">
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        {{!-- task --}}
+        <div id="side">
+            <div id="div">
+                <button id="addBtn">Add</button>
+                <button id="editBtn">Edit</button>
+                <button>Delete</button>
+            </div>
+            <br>
+            <br>
+            <table id="tasks">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email Id</th>
+                    </tr>
+                    <tr>
+                        <td>XYZ</td>
+                        <td>ABC @gmail</td>
+                    </tr>
+                    <tr>
+                        <td>ABC</td>
+                        <td>XYZ@gmail</td>
+                    </tr>
+
+                </thead>
+            </table>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/admin">ADMIN</a></li>
+                <li><a href="/vendor">VENDOR</a></li>
+                <li><a href="/user">USER</a></li>
+                <li><a href="/product">PRODUCT</a></li>
+                <li><a href="/add">ADD</a></li>
+                <li><a href="/ticket">TICKET</a></li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        {{!-- <div id="btn"> --}}
+            <button id="btn">Prevision</button>
+            <button id="btn1">Next</button>
+        </div>
+</body>
+
+</html>

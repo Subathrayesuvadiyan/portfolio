@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>home</title>
+    <link rel="icon" href="/img/logo1.jpg">
+    <link rel="stylesheet" href="/css/gct.css">
+    {{!--
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> --}}
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/js/home.js"></script>
+</head>
+
+<body>
+<div class="header">
+    <img src="/img/logo3.jpg">
+    <img src="img/gct1.jpg">
+</div>
+<button id="lo">LOGOUT</button>
+{{!-- <div id="myChart"></div> --}}
+
+<div class="container1">
+    <div id="chartContainer1"></div>
+</div>
+<div class="container2">
+    {{!-- <h3>Top 5 Vendors</h3> --}}
+    <div id="container"></div>
+</div>
+<div class="container3">
+    <div id="chart_div"></div>
+
+</div>
+<div class="footer">
+    <button id="btn">Log Out</button>
+
+</div>
+
+
+<div class="sidebar">
+    <ul>
+        <li><a href="/home">HOME</a></li>
+        <li><a href="/admin">ADMIN</a></li>
+        <li><a href="/vendor">VENDOR</a></li>
+        <li><a href="/user">USER</a></li>
+        <li><a href="/product">PRODUCT</a></li>
+        <li><a href="/add">ADD</a></li>
+        <li><a href="/ticket">TICKET</a></li>
+    </ul>
+</div>
+
+</html>
