@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    background-color: #212428;
+    /* color: white; */
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.app-header {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    margin-top: -100px;
+  }

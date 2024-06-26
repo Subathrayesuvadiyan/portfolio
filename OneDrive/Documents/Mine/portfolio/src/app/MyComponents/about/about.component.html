@@ -1,0 +1,137 @@
+<div class="container">
+    <p>1+ Year of Self-Taught Coding Proficiency.</p>
+    <h1>ABOUT ME</h1>
+
+    <div class="about-nav">
+        <div class="education" (click)="showContent('education')" [class.active]="activeTab === 'education'">Education
+        </div>
+        <div class="skills" (click)="showContent('skills')" [class.active]="activeTab === 'skills'">Skills</div>
+        <div class="experience" (click)="showContent('experience')" [class.active]="activeTab === 'experience'">
+            Experience</div>
+    </div>
+    <br>
+    <div class="education-about" *ngIf="activeTab === 'education'">
+        <p>2017 - 2023</p>
+        <h2>Education Quality</h2>
+        <div class="timeline">
+
+            <div class="container3 left-container">
+                <img src="/assets/kv_logo.png" alt="">
+                <div class="text-box">
+                    <h2>SSE [8.8CGPA]</h2>
+                    <!-- <span class="marks">/10</span> -->
+                    <small>Kendriya Vidhyalaya (2016-2017)</small>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container3 right-container">
+                <img src="/assets/kv_logo.png" alt="">
+                <div class="text-box">
+                    <h2>HSE [81%]</h2>
+                    <!-- <span class="marks"></span> -->
+                    <small>Kendriya Vidhyalaya (2018-2019)</small>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container3 left-container">
+                <img src="/assets/xaviers_logo.jpg" alt="">
+                <div class="text-box">
+                    <h2>Bachelour of Science [75%]</h2>
+                    <!-- <span class="marks"></span> -->
+                    <small>St.Xavier's College (2019-2022)</small>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container3 right-container">
+                <img src="/assets/beasant_logo.jpg" alt="">
+                <div class="text-box">
+                    <h2>Mastering Nodejs Course</h2>
+                    <small>Beasant Technologies (2022-2023)</small><br>
+                    <span></span>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container3 left-container">
+                <img src="/assets/techi3_logo.jpg" alt="">
+                <div class="text-box">
+                    <h2>Angular Js Course</h2>
+                    <small>Tech i3 Solutions (2023-2024)</small><br>
+                    <span></span>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="skill-about" *ngIf="activeTab === 'skills'">
+        <p>Features</p>
+        <div class="skill-container">
+            <div class="left-skill">
+                <div class="left-skill-container">
+                    <h2>Development Skills</h2>
+
+                    <div class="skill">
+                        <h5>HTML <span>(95%)</span></h5>
+                        <div class="bar-outer">
+                            <div class="html-bar inner-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>CSS <span>(80%)</span></h5>
+                        <div class="bar-outer">
+                            <div class="css-bar inner-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>Javascript <span>(85%)</span></h5>
+                        <div class="bar-outer">
+                            <div class="js-bar inner-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>Angular <span>(80%)</span></h5>
+                        <div class="bar-outer">
+                            <div class="angular-bar inner-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>NodeJs <span>(65%)</span></h5>
+                        <div class="bar-outer">
+                            <div class="node-bar inner-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>MongoDB <span>(65%)</span></h5>
+                        <div class="bar-outer">
+                            <div class="mongo-bar inner-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="right-skill">
+                <div class="right-skill-container">
+                    <h2>Other Skills</h2>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+    <div class="experience-about" *ngIf="activeTab === 'experience'">
+            
+            <div class="paragraph">
+                <p>"Passionate about turning ideas into innovation through coding."</p>
+            </div>
+        <div class="experience-container">
+            "As a self-taught coder with a year of dedicated practice, my journey has been fueled by a passion for
+            continuous learning and a commitment to honing my programming skills. Looking ahead, my goal is to
+            contribute meaningfully to a dynamic and innovative team, bringing fresh perspectives and a strong
+            foundation in coding. I am eager to apply my knowledge in a professional setting, collaborating on exciting
+            projects and further expanding my expertise. With a focus on adaptability and a keen interest in staying
+            abreast of industry trends, I am excited about the prospect of contributing to a company's success while
+            continuously evolving as a software developer. Let's embark on this coding journey together, and let my
+            experience section begin with the challenges and triumphs we'll face as part of your esteemed team."
+        </div>
+    </div>
+    <button (click)="downloadCV()">Download CV</button>
+
+</div>
